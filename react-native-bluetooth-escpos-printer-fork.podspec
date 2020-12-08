@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0" }
   s.source       = { :git => "https://github.com/wiyantotan/react-native-bluetooth-escpos-printer-fork.git", :tag => "#{s.version}" }
 
-  
-  s.source_files = "ios/**/*.{h,m,mm}"
-  
 
+  s.source_files = "ios/**/*.{h,m,mm}"
+
+  s.dependency 'ZXingObjC', '~> 3.6.4'
   s.dependency "React"
 end

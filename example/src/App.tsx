@@ -1,25 +1,31 @@
-import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import BluetoothEscposPrinterFork from 'react-native-bluetooth-escpos-printer-fork';
+import React, {Component} from 'react';
+import {View,StatusBar} from 'react-native';
+import NavigationExperimental  from 'react-native-deprecated-custom-components';
+import Home from "./home";
 
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+export default class App extends Component {
+  _navigator = null;
+  constructor(props: any) {
+    super(props);
+  }
+  componentDidMount() {
 
-  React.useEffect(() => {
-    BluetoothEscposPrinterFork.multiply(3, 7).then(setResult);
-  }, []);
+  }
 
-  return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
-  );
+  renderScene(route: any, navigator: any) {
+    this._navigator = navigator;
+    let Component = route.component;
+    return <View style={{flex:1}}><StatusBar backgroundColor="lightblue" /><Component route={route} navigator={navigator} {...route.passProps}/></View>
+  }
+
+  render() {
+    return (
+      <NavigationExperimental.Navigator
+        style={{flex: 1}}
+        initialRoute={{component: Home}}
+        configureScene={() => { return NavigationExperimental.Navigator.SceneConfigs.FloatFromRight; }}
+        renderScene={this.renderScene}
+      />
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

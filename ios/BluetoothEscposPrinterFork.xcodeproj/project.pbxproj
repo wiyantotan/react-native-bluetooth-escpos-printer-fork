@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-
-		5E555C0D2413F4C50049A1A2 /* BluetoothEscposPrinterFork.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* BluetoothEscposPrinterFork.mm */; };
+		3BC0B4B0257FB03E008ED1D6 /* RNTscCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4AF257FB03E008ED1D6 /* RNTscCommand.m */; };
+		3BC0B4B5257FB07C008ED1D6 /* PrintImageBleWriteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4B4257FB07C008ED1D6 /* PrintImageBleWriteDelegate.m */; };
+		3BC0B4BA257FB0BD008ED1D6 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4B9257FB0BD008ED1D6 /* ImageUtils.m */; };
+		3BC0B4BF257FB0ED008ED1D6 /* ColumnSplitedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4BE257FB0ED008ED1D6 /* ColumnSplitedString.m */; };
+		3BC0B4C4257FB120008ED1D6 /* PrintColumnBleWriteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4C3257FB120008ED1D6 /* PrintColumnBleWriteDelegate.m */; };
+		3BC0B4C9257FB150008ED1D6 /* RNBluetoothTscPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4C8257FB150008ED1D6 /* RNBluetoothTscPrinter.m */; };
+		3BC0B4CE257FB194008ED1D6 /* RNBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4CD257FB194008ED1D6 /* RNBluetoothManager.m */; };
+		3BC0B4D3257FB1D1008ED1D6 /* RNBluetoothEscposPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4D2257FB1D1008ED1D6 /* RNBluetoothEscposPrinter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +31,22 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libBluetoothEscposPrinterFork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBluetoothEscposPrinterFork.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
-
-		B3E7B5881CC2AC0600A0062D /* BluetoothEscposPrinterFork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothEscposPrinterFork.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* BluetoothEscposPrinterFork.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BluetoothEscposPrinterFork.mm; sourceTree = "<group>"; };
-
+		3BC0B4AE257FB013008ED1D6 /* RNTscCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTscCommand.h; sourceTree = "<group>"; };
+		3BC0B4AF257FB03E008ED1D6 /* RNTscCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTscCommand.m; sourceTree = "<group>"; };
+		3BC0B4B3257FB063008ED1D6 /* PrintImageBleWriteDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintImageBleWriteDelegate.h; sourceTree = "<group>"; };
+		3BC0B4B4257FB07C008ED1D6 /* PrintImageBleWriteDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintImageBleWriteDelegate.m; sourceTree = "<group>"; };
+		3BC0B4B8257FB0A7008ED1D6 /* ImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		3BC0B4B9257FB0BD008ED1D6 /* ImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		3BC0B4BD257FB0D7008ED1D6 /* ColumnSplitedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColumnSplitedString.h; sourceTree = "<group>"; };
+		3BC0B4BE257FB0ED008ED1D6 /* ColumnSplitedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColumnSplitedString.m; sourceTree = "<group>"; };
+		3BC0B4C2257FB106008ED1D6 /* PrintColumnBleWriteDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintColumnBleWriteDelegate.h; sourceTree = "<group>"; };
+		3BC0B4C3257FB120008ED1D6 /* PrintColumnBleWriteDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintColumnBleWriteDelegate.m; sourceTree = "<group>"; };
+		3BC0B4C7257FB13D008ED1D6 /* RNBluetoothTscPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBluetoothTscPrinter.h; sourceTree = "<group>"; };
+		3BC0B4C8257FB150008ED1D6 /* RNBluetoothTscPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBluetoothTscPrinter.m; sourceTree = "<group>"; };
+		3BC0B4CC257FB174008ED1D6 /* RNBluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBluetoothManager.h; sourceTree = "<group>"; };
+		3BC0B4CD257FB194008ED1D6 /* RNBluetoothManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBluetoothManager.m; sourceTree = "<group>"; };
+		3BC0B4D1257FB1B3008ED1D6 /* RNBluetoothEscposPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBluetoothEscposPrinter.h; sourceTree = "<group>"; };
+		3BC0B4D2257FB1D1008ED1D6 /* RNBluetoothEscposPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBluetoothEscposPrinter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +71,22 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-
-				B3E7B5881CC2AC0600A0062D /* BluetoothEscposPrinterFork.h */,
-				B3E7B5891CC2AC0600A0062D /* BluetoothEscposPrinterFork.mm */,
-
+				3BC0B4D2257FB1D1008ED1D6 /* RNBluetoothEscposPrinter.m */,
+				3BC0B4D1257FB1B3008ED1D6 /* RNBluetoothEscposPrinter.h */,
+				3BC0B4CD257FB194008ED1D6 /* RNBluetoothManager.m */,
+				3BC0B4CC257FB174008ED1D6 /* RNBluetoothManager.h */,
+				3BC0B4C8257FB150008ED1D6 /* RNBluetoothTscPrinter.m */,
+				3BC0B4C7257FB13D008ED1D6 /* RNBluetoothTscPrinter.h */,
+				3BC0B4C3257FB120008ED1D6 /* PrintColumnBleWriteDelegate.m */,
+				3BC0B4C2257FB106008ED1D6 /* PrintColumnBleWriteDelegate.h */,
+				3BC0B4BE257FB0ED008ED1D6 /* ColumnSplitedString.m */,
+				3BC0B4BD257FB0D7008ED1D6 /* ColumnSplitedString.h */,
+				3BC0B4B9257FB0BD008ED1D6 /* ImageUtils.m */,
+				3BC0B4B8257FB0A7008ED1D6 /* ImageUtils.h */,
+				3BC0B4B4257FB07C008ED1D6 /* PrintImageBleWriteDelegate.m */,
+				3BC0B4B3257FB063008ED1D6 /* PrintImageBleWriteDelegate.h */,
+				3BC0B4AE257FB013008ED1D6 /* RNTscCommand.h */,
+				3BC0B4AF257FB03E008ED1D6 /* RNTscCommand.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,10 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-
-				5E555C0D2413F4C50049A1A2 /* BluetoothEscposPrinterFork.mm in Sources */,
-
+				3BC0B4CE257FB194008ED1D6 /* RNBluetoothManager.m in Sources */,
+				3BC0B4C4257FB120008ED1D6 /* PrintColumnBleWriteDelegate.m in Sources */,
+				3BC0B4B5257FB07C008ED1D6 /* PrintImageBleWriteDelegate.m in Sources */,
+				3BC0B4D3257FB1D1008ED1D6 /* RNBluetoothEscposPrinter.m in Sources */,
+				3BC0B4B0257FB03E008ED1D6 /* RNTscCommand.m in Sources */,
+				3BC0B4BF257FB0ED008ED1D6 /* ColumnSplitedString.m in Sources */,
+				3BC0B4C9257FB150008ED1D6 /* RNBluetoothTscPrinter.m in Sources */,
+				3BC0B4BA257FB0BD008ED1D6 /* ImageUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +268,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BluetoothEscposPrinterFork;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
@@ -254,7 +284,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BluetoothEscposPrinterFork;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};

@@ -1,9 +1,5 @@
-import { NativeModules } from 'react-native';
+import BluetoothEscposPrinter from './bluetooth_escpos_printer';
+import BluetoothManager from './bluetooth_manager';
+import BluetoothTscPrinter from './bluetooth_tsc_printer';
 
-type BluetoothEscposPrinterForkType = {
-  multiply(a: number, b: number): Promise<number>;
-};
-
-const { BluetoothEscposPrinterFork } = NativeModules;
-
-export default BluetoothEscposPrinterFork as BluetoothEscposPrinterForkType;
+export { BluetoothTscPrinter, BluetoothManager, BluetoothEscposPrinter };
