@@ -1,0 +1,6 @@
+rootProject.name = 'BluetoothEscposPrinterForkExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativebluetoothescposprinterfork'
+project(':reactnativebluetoothescposprinterfork').projectDir = new File(rootProject.projectDir, '../../android')
