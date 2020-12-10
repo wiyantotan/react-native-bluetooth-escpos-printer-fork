@@ -143,7 +143,7 @@ class RNBluetoothEscposPrinterModule(private val reactContext: ReactApplicationC
 
 
   @ReactMethod
-  fun printText(text: String, @Nullable options: ReadableMap?, promise: Promise) {
+  fun printText(text: String, options: ReadableMap?, promise: Promise) {
     try {
       var encoding = "GBK"
       var codepage = 0

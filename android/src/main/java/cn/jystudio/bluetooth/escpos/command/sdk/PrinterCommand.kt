@@ -256,7 +256,7 @@ object PrinterCommand {
 
     escE[2] = bold.toByte()
     escG[2] = bold.toByte()
-    return concatAll(escE, *escG)
+    return concatAll(escE, escG)
   }
 
   /**
@@ -283,7 +283,7 @@ object PrinterCommand {
     escMins[2] = line.toByte()
     val fsMinus = Arrays.copyOf(Command.FS_Minus, Command.FS_Minus.size)
     fsMinus[2] = line.toByte()
-    return concatAll(escMins, *fsMinus)
+    return concatAll(escMins, fsMinus)
   }
 
   /**

@@ -354,7 +354,7 @@ class RNBluetoothManagerModule(private val reactContext: ReactApplicationContext
         if (resultCode == Activity.RESULT_OK) {
           // Get the device MAC address
           if (data != null) {
-            val address = data.getExtras().getString(
+            val address = data!!.getExtras().getString(
               EXTRA_DEVICE_ADDRESS)
             // Get the BLuetoothDevice object
             if (adapter != null && BluetoothAdapter.checkBluetoothAddress(address)) {

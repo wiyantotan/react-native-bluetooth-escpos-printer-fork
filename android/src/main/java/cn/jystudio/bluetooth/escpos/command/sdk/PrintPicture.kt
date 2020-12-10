@@ -4,6 +4,8 @@ import android.graphics.*
 import cn.jystudio.bluetooth.escpos.command.sdk.PrintPicture.eachLinePixToCmd
 
 import java.io.UnsupportedEncodingException
+import kotlin.experimental.inv
+import kotlin.experimental.or
 
 object PrintPicture {
   private val p0 = intArrayOf(0, 128)
