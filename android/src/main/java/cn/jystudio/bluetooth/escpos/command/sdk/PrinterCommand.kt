@@ -238,8 +238,9 @@ object PrinterCommand {
     escT[2] = codepage.toByte()
     val escM = Arrays.copyOf(Command.ESC_M, Command.ESC_M.size) //
     escM[2] = nFontType.toByte()
+    var fsAnd = Arrays.copyOf(Command.FS_and, Command.FS_and.size) // enable chinese character esc/pos zjiang
     var data: ByteArray? = null
-    data = concatAll(gsExclamationMark, escT, escM, pbString)
+    data = concatAll(gsExclamationMark, escT, escM, fsAnd, pbString)
 
     return data
   }
